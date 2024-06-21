@@ -1,0 +1,119 @@
+@import "../../app.scss";
+
+.featured{
+    height: 95vh;
+    position: relative;
+    
+
+    @include tablet {
+        height: 70vh;
+     }
+
+    .category {
+        position: absolute;
+        top: 150px;
+        left: 50px;
+        font-size: 30px;
+        font-weight: 500;
+        color: white;
+        display: flex;
+        align-items: center;
+    
+        select {
+          cursor: pointer;
+          background-color: var(--main-color);
+          color: white;
+          margin-left: 20px;
+          padding: 5px;
+        }
+    }
+   
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+    }
+
+    .info{
+        width: 35%;
+        position: absolute;
+        left: 50px;
+        bottom: 150px;
+        color: white;
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            bottom: 40px;
+         }
+
+         
+         @include tablet {
+            width: 70%;
+        }
+
+       
+
+        img{
+            width: 400px;
+
+            @include tablet {
+                width: 50vw;
+                
+             }
+        }
+
+        .desc{
+            margin: 20px 0px;
+            font-size: 20px;
+            text-align: justify;
+ 
+
+            @include tablet {
+               width: 60vw;
+               font-size: 13px;
+            }
+
+ 
+
+        }
+
+        .buttons{
+            display: flex;
+            align-items: center;
+            
+            
+            button{
+                margin-right: 10px;
+                @include tablet {
+                    size: 20px;
+                }
+
+                
+
+
+                &.play{
+                    background-color: #4361ee;
+                    @include tablet {
+                        width: auto;
+                        height: auto;
+                        font-size: 12px;
+                    }
+                    
+                   
+                }
+
+                &.more{
+                    background-color: white;
+                    color: var(--main-color);
+                    @include tablet {
+                        display:none;
+                     }
+                }
+                
+            }
+        }
+    }
+}

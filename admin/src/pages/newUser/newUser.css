@@ -1,0 +1,78 @@
+.newUser{
+    flex: 6;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.newUserForm {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  margin-left: 100px;
+}
+
+.newUserItem {
+  width: 700px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+.newUserItem > label {
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(151, 150, 150);
+}
+
+.radiobtn {
+    margin-bottom: 10px;
+    font-size: 12px !important;
+    margin-top: -5px;
+    
+  }
+
+.newUserItem > input {
+  height: 20px;
+  padding: 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.newUserSelect{
+    height: 40px;
+    border-radius: 5px;
+}
+.css-ahj2mt-MuiTypography-root{
+    font-size: 14px !important;
+}
+
+.newUserGender>label{
+    margin-top: -10px;
+    margin-left: 10px;
+    font-size: 10px !important;
+    color: #555;
+
+}
+
+.newUserButton{
+    width: 200px;
+    border: none;
+    background-color: darkblue;
+    color: white;
+    padding: 7px 10px;
+    font-weight: 600;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+    height: 40px;
+}
+
+
+#demo-simple-select{
+    margin-bottom: -10px;
+    font-size: px;
+    font-weight: 400;
+    color: rgb(151, 150, 150);
+}

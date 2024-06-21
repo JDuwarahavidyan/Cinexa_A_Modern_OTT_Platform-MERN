@@ -1,0 +1,28 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "crypto-js": "^4.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.3.1",
+    "nodemon": "^3.1.0"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "resolve-url-loader": "^5.0.0",
+    "sass": "^1.77.5",
+    "sass-loader": "^14.2.1",
+    "style-loader": "^4.0.0"
+  }
+}

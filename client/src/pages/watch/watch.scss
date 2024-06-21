@@ -1,0 +1,42 @@
+@import "../../app.scss";
+
+.watch {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(217, 233, 247);
+
+   
+  
+    .back {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      
+      top: 10px;
+      left: 10px;
+      color: white;
+      cursor: pointer;
+      z-index: 2;
+
+      @include tabletPro {
+        color: black;
+        
+      }
+
+
+    }
+  
+    .video {
+      width: 100%;
+      height: 100%;
+      object-fit: fill;
+      
+
+      @include tabletPro {
+        height: 50vh;
+        margin-top: 25vh;
+        
+      }
+
+    }
+  }
