@@ -19,7 +19,10 @@ export default function Topbar() {
     const {dispatch } = useContext(AuthContext);
 
 
-
+    const handleLogout = () => {
+        dispatch({ type: "LOGOUT" });
+        localStorage.removeItem("user");
+      };
 
 
     return (

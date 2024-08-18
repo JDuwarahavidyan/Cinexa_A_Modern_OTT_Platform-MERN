@@ -6,8 +6,6 @@ import { login } from "../../context/authContext/apiCalls";
 import { AuthContext } from "../../context/authContext/AuthContext";
 import { Link } from "react-router-dom";
 
-
-
 export default function Login() {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");

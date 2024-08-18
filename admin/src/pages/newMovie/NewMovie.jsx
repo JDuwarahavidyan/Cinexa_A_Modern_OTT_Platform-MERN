@@ -1,5 +1,5 @@
 import React from 'react'
-import './newProduct.css'
+import './newMovie.css'
 import TextField from '@mui/material/TextField';
 import FormControl from '@mui/material/FormControl';
 import InputLabel from '@mui/material/InputLabel';
@@ -13,7 +13,7 @@ import { MovieContext } from '../../context/movieContext/MovieContext';
 import { useNavigate  } from 'react-router-dom';
 
 
-export default function NewProduct() {
+export default function NewMovie() {
   const [active, setActive] = React.useState('');
 
   const [movie, setMovie] = useState(null);

@@ -46,9 +46,7 @@ const Home = ({type}) => {
         <List key={list._id} list={list}/>
       ))}
 
-      {/* <List/>
-      <List/>
-      <List/> */}
+    
     </div>
   )
 }

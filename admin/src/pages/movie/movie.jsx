@@ -1,13 +1,9 @@
 import React from "react";
 import { Link } from 'react-router-dom'
-import './product.css'
-import Chart from "../../components/chart/Chart"
-import {productData} from "../../dummyData"
+import './movie.css'
 import PublishIcon from '@mui/icons-material/Publish';
 import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
-import FormLabel from '@mui/material/FormLabel';
 import InputLabel from '@mui/material/InputLabel';
 import Select from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
@@ -18,10 +14,9 @@ import { MovieContext } from "../../context/movieContext/MovieContext";
 import { useNavigate } from 'react-router-dom';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
 import  storage  from '../../firebase';
-import Box from '@mui/material/Box';
 import LinearProgress from '@mui/material/LinearProgress';
 
-export default function Product() {
+export default function Movie() {
     const location = useLocation();
     const navigate = useNavigate();
     const initialMovie = location.state.movies;
@@ -33,8 +28,8 @@ export default function Product() {
     const [trailer, setTrailer] = useState(null);
     const [video, setVideo] = useState(null);
     const [uploaded, setUploaded] = useState(0);
-    const [progress, setProgress] = useState(0); // Add progress state
-    const [buffer, setBuffer] = useState(0); // Add buffer state
+    const [progress, setProgress] = useState(0)
+    const [buffer, setBuffer] = useState(0); 
     const [active, setActive] = useState(movie.isSeries ? "true" : "false");
 
     const handleChange = (e) => {
@@ -114,7 +109,7 @@ export default function Product() {
         if (items.length > 0) {
             upload(items);
         } else {
-            setUploaded(5); // Assume all files are uploaded if no new files are selected
+            setUploaded(5); // all files are uploaded if no new files are selected
         }
     };
 

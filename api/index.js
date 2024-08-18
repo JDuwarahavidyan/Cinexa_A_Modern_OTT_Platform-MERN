@@ -10,6 +10,8 @@ const listRoute = require("./routes/lists");
 
 dotenv.config();
 
+app.use(express.static('public'));
+
 mongoose
   .connect(process.env.MONGO_URL, {
   })

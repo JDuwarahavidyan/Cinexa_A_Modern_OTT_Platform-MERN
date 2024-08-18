@@ -25,10 +25,10 @@ export default function Sidebar() {
               Analytics
             </li>
 
-            <li className="sidebarListItem">
+            {/* <li className="sidebarListItem">
               <TrendingUpIcon className='sidebarIcon'/>
               Sales
-            </li>
+            </li> */}
 
           </ul>
         </div>
